@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Freelancer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+   <header>
+       <div class="header">
+           <ul>
+               <li>
+                <img src="https://www.f-cdn.com/assets/main/en/assets/freelancer-logo.svg" style="width: 150px; " >  
+               </li>
+               <li>
+                   <a href="#">How It Works</a>
+               </li>
+               <li>
+                   <a href="#">Browse Jobs</a>
+               </li>
+           </ul>
+       </div>
+       <div class="header">
+        <ul>
+            <li>
+                <a href="#">Log In</a>
+            </li>
+            <li>
+                <a href="#">Sign Up</a>
+            </li>
+            <li>
+                <button>Post a Project</button>
+            </li>
+        </ul>
+       </div>
+   </header> 
+   <nav>
+    <div class="navbar">
+      <i class='bx bx-menu'></i>
+      <div class="nav-links">
+        <ul class="links">
+          <li>
+            <a href="#">Find Jobs</a>
+            <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
+            <ul class="htmlCss-sub-menu sub-menu">
+              <li class="more">
+                <span><a href="#">By Skill</a>
+                  <i class='bx bxs-chevron-right arrow more-arrow'></i>
+                </span>
+                <ul class="more-sub-menu sub-menu">
+                  <li><a href="#">Find Graphic Design Jobs</a></li>
+                  <li><a href="#">Find Graphic Design Jobs</a></li>
+                  <li><a href="#">Find Graphic Design Jobs</a></li>
+                </ul>
+              </li>
+              <li class="more">
+                <span><a href="#">By Language</a>
+                  <i class='bx bxs-chevron-right arrow more-arrow'></i>
+                </span>
+                <ul class="more-sub-menu sub-menu">
+                  <li><a href="#">Find Freelance Jobs In English</a></li>
+                  <li><a href="#">Find Freelance Jobs In English</a></li>
+                  <li><a href="#">Find Freelance Jobs In English</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Latest jobs</a></li>
+              <li><a href="#">Featured Jobs</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Find Freelancers</a>
+            <i class='bx bxs-chevron-down js-arrow arrow '></i>
+            <ul class="js-sub-menu sub-menu">
+                <li class="more">
+                    <span><a href="#">By Skill</a>
+                      <i class='bx bxs-chevron-right arrow more-arrow'></i>
+                    </span>
+                    <ul class="more-sub-menu sub-menu">
+                      <li><a href="#">Find Graphic Design Jobs</a></li>
+                      <li><a href="#">Find Graphic Design Jobs</a></li>
+                      <li><a href="#">Find Graphic Design Jobs</a></li>
+                    </ul>
+                  </li>
+                  <li class="more">
+                    <span><a href="#">By Location</a>
+                      <i class='bx bxs-chevron-right arrow more-arrow'></i>
+                    </span>
+                    <ul class="more-sub-menu sub-menu">
+                      <li><a href="#">Find Freelance Jobs In English</a></li>
+                      <li><a href="#">Find Freelance Jobs In English</a></li>
+                      <li><a href="#">Find Freelance Jobs In English</a></li>
+                    </ul>
+                  </li>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#">Get Ideas</a></li>
+          <li><a href="#">Resorcues</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<script>
+      // search-box open close js code
+let navbar = document.querySelector(".navbar");
+let searchBox = document.querySelector(".search-box .bx-search");
+// let searchBoxCancel = document.querySelector(".search-box .bx-x");
+
+searchBox.addEventListener("click", ()=>{
+  navbar.classList.toggle("showInput");
+  if(navbar.classList.contains("showInput")){
+    searchBox.classList.replace("bx-search" ,"bx-x");
+  }else {
+    searchBox.classList.replace("bx-x" ,"bx-search");
+  }
+});
+
+// sidebar open close js code
+let navLinks = document.querySelector(".nav-links");
+let menuOpenBtn = document.querySelector(".navbar .bx-menu");
+let menuCloseBtn = document.querySelector(".nav-links .bx-x");
+menuOpenBtn.onclick = function() {
+navLinks.style.left = "0";
+}
+menuCloseBtn.onclick = function() {
+navLinks.style.left = "-100%";
+}
+
+
+// sidebar submenu open close js code
+let htmlcssArrow = document.querySelector(".htmlcss-arrow");
+htmlcssArrow.onclick = function() {
+ navLinks.classList.toggle("show1");
+}
+let moreArrow = document.querySelector(".more-arrow");
+moreArrow.onclick = function() {
+ navLinks.classList.toggle("show2");
+}
+let jsArrow = document.querySelector(".js-arrow");
+jsArrow.onclick = function() {
+ navLinks.classList.toggle("show3");
+}
+
+</script>
+
+
+   </div>
+  <div class="duzen">
+  <h2>Hire the best <br> freelancers for any job, <br> online.</h2>
+  <h6>Millions of people use freelancer.com to turn their ideas <br> into reality.</h6>
+  <div class="button">
+      <button>
+          Hire a Freelancer
+      </button>
+      <button class="btn">
+          Earn Money Freelancing
+      </button>
+  </div>
+  </div>
+   
+   <video  width="100%" height="100%"  muted autoplay >
+       
+    <source src="https://www.f-cdn.com/assets/main/en/assets/home/video/nasa-v3.mp4" type="video/mp4">
+    <source src="https://www.f-cdn.com/assets/main/en/assets/home/video/magazine-v3.mp4" type="video/mp4">
+    <source src="https://www.f-cdn.com/assets/main/en/assets/home/video/house-v3.mp4" type="video/mp4">
+    <source src="https://www.f-cdn.com/assets/main/en/assets/home/video/mobile-phone-v3.mp4" type="video/mp4">    
+
+   
+   </video>
+   <br>
+<div class="hizlierisimler">
+    <ul>
+        <li>
+            <p>As used by</p>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <img src="https://www.f-cdn.com/assets/main/en/assets/home/redesign/companies/amazon_logo2.svg" alt="">
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <img src="https://www.f-cdn.com/assets/main/en/assets/home/redesign/companies/facebook-corporate-logo2.svg" alt="">
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <img src="https://www.f-cdn.com/assets/main/en/assets/home/redesign/companies/deloitte-logo2.svg" alt="">
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <img src="https://www.f-cdn.com/assets/main/en/assets/home/redesign/companies/novo-nordisk-logo2.svg" alt="">
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <img src="https://www.f-cdn.com/assets/main/en/assets/home/redesign/companies/nasa-logo3.svg" alt="">
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <img src="https://www.f-cdn.com/assets/main/en/assets/home/redesign/companies/ibm-logo2.svg" alt="">
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <img src="https://www.f-cdn.com/assets/main/en/assets/home/redesign/companies/airbus-logo2.svg" alt="">
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <img src="https://www.f-cdn.com/assets/main/en/assets/home/redesign/companies/telstra-logo.svg" alt="">
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <img src="https://www.f-cdn.com/assets/main/en/assets/home/redesign/companies/fujitsu-logo.svg" alt="">
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <img src="https://www.f-cdn.com/assets/main/en/assets/home/redesign/companies/google-logo.svg" alt="">
+        </li>
+    </ul>
+
+</div>
+<hr>
+<h2>Need something done?</h2>
+    <div id="page">
+        <ul>
+            <li>
+                <img src="https://www.f-cdn.com/assets/main/en/assets/illustrations/browse-portfolios.svg" alt=""> <h3>Post a job</h3>
+            </li>
+            <li>
+                <p>It’s free and easy to post a job. <br> Simply fill in a title, description and <br> budget and competitive bids come <br> within minutes.</p>
+            </li>
+        </ul>
+        <ul>
+          <li>
+              <img src="https://www.f-cdn.com/assets/main/en/assets/illustrations/browse-portfolios.svg" alt=""><h3>Choose freelancers</h3>
+          </li>
+          <li>
+              <p>No job is too big or too small. We've <br> got freelancers for jobs of any size or <br> budget, across 1800+ skills. No job is <br> too complex. We can get it done!</p>
+          </li>
+      </ul>
+      <ul>
+          <li>
+              <img src="https://www.f-cdn.com/assets/main/en/assets/illustrations/browse-portfolios.svg" alt=""><h3>Pay safely</h3>
+          </li>
+          <li>
+              <p>Only pay for work when it has been <br> completed and you're 100% satisfied <br> with the quality using our milestone <br> payment system.</p>
+          </li>
+      </ul>
+      <ul>
+          <li>
+              <img src="https://www.f-cdn.com/assets/main/en/assets/illustrations/browse-portfolios.svg" alt=""> <h3>We’re here to help</h3>
+          </li>
+          <li>
+              <p>Our talented team of recruiters can <br> help you find the best freelancer for <br> the job and our technical co-pilots <br> can even manage the project for you.</p>
+          </li>
+      </ul>
+    </div>
+    <hr> 
+    <h2>What's great about it?</h2>
+
+  <div id="page">
+      <ul>
+          <li>
+              <img src="https://www.f-cdn.com/assets/main/en/assets/illustrations/browse-portfolios.svg" alt=""><h3>Browse portfolios</h3>
+          </li>
+          <li>
+              <p>Find professionals you can trust by <br> browsing their samples of previous <br> work and reading their profile <br> reviews.</p>
+          </li>
+      </ul>
+      <ul>
+        <li>
+            <img src="https://www.f-cdn.com/assets/main/en/assets/illustrations/browse-portfolios.svg" alt=""><h3>Fast bids</h3>
+        </li>
+        <li>
+            <p>Receive obligation free quotes from <br> our talented freelancers fast. 80% of <br> projects get bid on within 60 <br> seconds.</p>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <img src="https://www.f-cdn.com/assets/main/en/assets/illustrations/browse-portfolios.svg" alt=""><h3>Quality work</h3>
+        </li>
+        <li>
+            <p>Freelancer.com has by far the largest <br> pool of quality freelancers globally- <br> over 50 million to choose from.</p>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <img src="https://www.f-cdn.com/assets/main/en/assets/illustrations/browse-portfolios.svg" alt=""> <h3>Track progress</h3>
+        </li>
+        <li>
+            <p>Keep up-to-date and on-the-go with <br> our time tracker, and mobile app. <br> Always know what freelancers are up <br> to.</p>
+        </li>
+    </ul>
+  </div>
+    <hr>
+   <h2>Make it Real with Freelancer.</h2>
+   <h1>Get some Inspirations from 1800+ skills</h1>
+ <div id="image">
+    
+     <div class="zoom">
+        <ul>
+            <li>
+                <div class="zoomm">
+                    <img src="https://www.f-cdn.com/assets/main/en/assets/home/crowd-favorite-redesign/website-2.jpg" alt="">
+                </div>
+               
+                <div class="btn">
+                    <a href="#" class="overlay-btn">Discover More</a>
+                </div>
+            </li>
+            <li>
+                <p><b>Website. <br> $200 USD in 9 days.</b></p>
+            </li>
+        </ul> 
+     </div>   
+     <div class="zoom">
+        <ul>
+            <li>
+                <div class="zoomm">
+                    <img src="https://www.f-cdn.com/assets/main/en/assets/home/crowd-favorite-redesign/3d-modeling.jpg" alt="">
+                </div>
+                <div class="btn">
+                    <a href="#" class="overlay-btn">Discover More</a>
+                </div>
+            </li>
+            <li>
+                <p><b>3D Modeling. <br> $110 USD in 28 days.</b></p>
+            </li>
+        </ul> 
+     </div>
+     <div class="zoom">
+        <ul>
+            <li>
+                <div class="zoomm">
+                    <img src="https://www.f-cdn.com/assets/main/en/assets/home/crowd-favorite-redesign/website-2.jpg" alt="">
+                </div>
+               
+                <div class="btn">
+                    <a href="#" class="overlay-btn">Discover More</a>
+                </div>
+            </li>
+            <li>
+                <p><b>Website. <br> $200 USD in 9 days.</b></p>
+            </li>
+        </ul> 
+     </div>   
+     <div class="zoom">
+        <ul>
+            <li>
+                <div class="zoomm">
+                    <img src="https://www.f-cdn.com/assets/main/en/assets/home/crowd-favorite-redesign/3d-modeling.jpg" alt="">
+                </div>
+                <div class="btn">
+                    <a href="#" class="overlay-btn">Discover More</a>
+                </div>
+            </li>
+            <li>
+                <p><b>3D Modeling. <br> $110 USD in 28 days.</b></p>
+            </li>
+        </ul> 
+     </div>
+ </div>
+ <div id="image">
+    
+    <div class="zoom">
+       <ul>
+           <li>
+               <div class="zoomm">
+                   <img src="https://www.f-cdn.com/assets/main/en/assets/home/crowd-favorite-redesign/website-2.jpg" alt="">
+               </div>
+              
+               <div class="btn">
+                   <a href="#" class="overlay-btn">Discover More</a>
+               </div>
+           </li>
+           <li>
+               <p><b>Website. <br> $200 USD in 9 days.</b></p>
+           </li>
+       </ul> 
+    </div>   
+    <div class="zoom">
+       <ul>
+           <li>
+               <div class="zoomm">
+                   <img src="https://www.f-cdn.com/assets/main/en/assets/home/crowd-favorite-redesign/3d-modeling.jpg" alt="">
+               </div>
+               <div class="btn">
+                   <a href="#" class="overlay-btn">Discover More</a>
+               </div>
+           </li>
+           <li>
+               <p><b>3D Modeling. <br> $110 USD in 28 days.</b></p>
+           </li>
+       </ul> 
+    </div>
+    <div class="zoom">
+       <ul>
+           <li>
+               <div class="zoomm">
+                   <img src="https://www.f-cdn.com/assets/main/en/assets/home/crowd-favorite-redesign/website-2.jpg" alt="">
+               </div>
+              
+               <div class="btn">
+                   <a href="#" class="overlay-btn">Discover More</a>
+               </div>
+           </li>
+           <li>
+               <p><b>Website. <br> $200 USD in 9 days.</b></p>
+           </li>
+       </ul> 
+    </div>   
+    <div class="zoom">
+       <ul>
+           <li>
+               <div class="zoomm">
+                   <img src="https://www.f-cdn.com/assets/main/en/assets/home/crowd-favorite-redesign/3d-modeling.jpg" alt="">
+               </div>
+               <div class="btn">
+                   <a href="#" class="overlay-btn">Discover More</a>
+               </div>
+           </li>
+           <li>
+               <p><b>3D Modeling. <br> $110 USD in 28 days.</b></p>
+           </li>
+       </ul> 
+    </div>
+</div>
+<div id="image">
+    
+    <div class="zoom">
+       <ul>
+           <li>
+               <div class="zoomm">
+                   <img src="https://www.f-cdn.com/assets/main/en/assets/home/crowd-favorite-redesign/website-2.jpg" alt="">
+               </div>
+              
+               <div class="btn">
+                   <a href="#" class="overlay-btn">Discover More</a>
+               </div>
+           </li>
+           <li>
+               <p><b>Website. <br> $200 USD in 9 days.</b></p>
+           </li>
+       </ul> 
+    </div>   
+    <div class="zoom">
+       <ul>
+           <li>
+               <div class="zoomm">
+                   <img src="https://www.f-cdn.com/assets/main/en/assets/home/crowd-favorite-redesign/3d-modeling.jpg" alt="">
+               </div>
+               <div class="btn">
+                   <a href="#" class="overlay-btn">Discover More</a>
+               </div>
+           </li>
+           <li>
+               <p><b>3D Modeling. <br> $110 USD in 28 days.</b></p>
+           </li>
+       </ul> 
+    </div>
+    <div class="zoom">
+       <ul>
+           <li>
+               <div class="zoomm">
+                   <img src="https://www.f-cdn.com/assets/main/en/assets/home/crowd-favorite-redesign/website-2.jpg" alt="">
+               </div>
+              
+               <div class="btn">
+                   <a href="#" class="overlay-btn">Discover More</a>
+               </div>
+           </li>
+           <li>
+               <p><b>Website. <br> $200 USD in 9 days.</b></p>
+           </li>
+       </ul> 
+    </div>   
+    <div class="zoom">
+       <ul>
+           <li>
+               <div class="zoomm">
+                   <img src="https://www.f-cdn.com/assets/main/en/assets/home/crowd-favorite-redesign/3d-modeling.jpg" alt="">
+               </div>
+               <div class="btn">
+                   <a href="#" class="overlay-btn">Discover More</a>
+               </div>
+           </li>
+           <li>
+               <p><b>3D Modeling. <br> $110 USD in 28 days.</b></p>
+           </li>
+       </ul> 
+    </div>
+</div>
+<div id="image">
+    
+    <div class="zoom">
+       <ul>
+           <li>
+               <div class="zoomm">
+                   <img src="https://www.f-cdn.com/assets/main/en/assets/home/crowd-favorite-redesign/website-2.jpg" alt="">
+               </div>
+              
+               <div class="btn">
+                   <a href="#" class="overlay-btn">Discover More</a>
+               </div>
+           </li>
+           <li>
+               <p><b>Website. <br> $200 USD in 9 days.</b></p>
+           </li>
+       </ul> 
+    </div>   
+    <div class="zoom">
+       <ul>
+           <li>
+               <div class="zoomm">
+                   <img src="https://www.f-cdn.com/assets/main/en/assets/home/crowd-favorite-redesign/3d-modeling.jpg" alt="">
+               </div>
+               <div class="btn">
+                   <a href="#" class="overlay-btn">Discover More</a>
+               </div>
+           </li>
+           <li>
+               <p><b>3D Modeling. <br> $110 USD in 28 days.</b></p>
+           </li>
+       </ul> 
+    </div>
+    <div class="zoom">
+       <ul>
+           <li>
+               <div class="zoomm">
+                   <img src="https://www.f-cdn.com/assets/main/en/assets/home/crowd-favorite-redesign/website-2.jpg" alt="">
+               </div>
+              
+               <div class="btn">
+                   <a href="#" class="overlay-btn">Discover More</a>
+               </div>
+           </li>
+           <li>
+               <p><b>Website. <br> $200 USD in 9 days.</b></p>
+           </li>
+       </ul> 
+    </div>   
+    <div class="zoom">
+       <ul>
+           <li>
+               <div class="zoomm">
+                   <img src="https://www.f-cdn.com/assets/main/en/assets/home/crowd-favorite-redesign/3d-modeling.jpg" alt="">
+               </div>
+               <div class="btn">
+                   <a href="#" class="overlay-btn">Discover More</a>
+               </div>
+           </li>
+           <li>
+               <p><b>3D Modeling. <br> $110 USD in 28 days.</b></p>
+           </li>
+       </ul> 
+    </div>
+</div>
+<button class="imgbtn">View More Projects</button>
+
+    <hr>
+    <h2>Get work done in over 1800 different categories</h2>
+ <div id="hizlierisimler">
+ 
+ <div class="link">
+
+     <ul>
+         <li>
+            <img src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-website-design-v2.svg" alt="">
+         </li>
+         <li>
+            <a href="#">Website Design</a>
+         </li>
+     </ul>
+     <ul>
+         <li>
+             <img src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-mobile-apps-v2.svg" alt="">           
+         </li>
+         <li>
+            <a href="">Mobile Apps</a>
+         </li>
+     </ul>
+     <ul>
+        <li>
+            <img src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-android-v2.svg" alt="">        
+        </li>
+        <li>
+            <a href="#">Android Apps</a>   
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <img src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-iphone-apps-v2.svg" alt="">        
+        </li>
+        <li>
+            <a href="#">iPhone Apps</a>   
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <img src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-software-architecture.svg" alt="">        
+        </li>
+        <li>
+            <a href="#">Software Architecture</a>   
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <img src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-graphic-design-v2.svg" alt="">        
+        </li>
+        <li>
+            <a href="#">Graphic Design</a>   
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <img src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-logo-design-v2.svg" alt="">        
+        </li>
+        <li>
+            <a href="#">Logo Design</a>   
+        </li>
+    </ul>      
+ </div>
+ <div class="link">
+    <ul>
+        <li>
+           <img src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-pr.svg" alt="">
+        </li>
+        <li>
+           <a href="#">Public Relations</a>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <img src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-logistics-v2.svg" alt="">           
+        </li>
+        <li>
+           <a href="">Logistics</a>
+        </li>
+    </ul>
+    <ul>
+       <li>
+           <img src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-proofreading.svg" alt="">        
+       </li>
+       <li>
+           <a href="#">Proofreading</a>   
+       </li>
+   </ul>
+   <ul>
+       <li>
+           <img src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-translation.svg" alt="">        
+       </li>
+       <li>
+           <a href="#">Translation</a>   
+       </li>
+   </ul>
+   <ul>
+       <li>
+           <img src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-research.svg" alt="">        
+       </li>
+       <li>
+           <a href="#">Research</a>   
+       </li>
+   </ul>
+   <ul>
+       <li>
+           <img src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-research-writing.svg" alt="">        
+       </li>
+       <li>
+           <a href="#">Research Writing</a>   
+       </li>
+   </ul>
+   <ul>
+       <li>
+           <img src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-article-writing-v2.svg" alt="">        
+       </li>
+       <li>
+           <a href="#">Article Writing</a>   
+       </li>
+   </ul>      
+</div>
+<div class="link">
+    <ul>
+        <li>
+            <img src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-web-scraping.svg" alt="">
+        </li>
+        <li>
+            <a href="#">Web Scraping</a>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <img src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-html.svg" alt="">
+        </li>
+        <li>
+            <a href="#">HTML</a>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <img src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-css.svg" alt="">
+        </li>
+        <li>
+            <a href="#">CSS</a>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <img src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-html-5.svg" alt="">
+        </li>
+        <li>
+            <a href="#">HTML 5</a>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <img src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-javascript.svg" alt="">
+        </li>
+        <li>
+            <a href="#">Javascript</a>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <img src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-data-processing.svg" alt="">
+        </li>
+        <li>
+            <a href="#">Data Processing</a>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <img src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-python.svg" alt="">
+        </li>
+        <li>
+            <a href="#">Python</a>
+        </li>
+    </ul>
+</div>
+<div class="link">
+    <ul>
+        <li>
+            <img src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-wordpress.svg" alt="">
+        </li>
+        <li>
+            <a href="#">Wordpress</a>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <img src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-web-search.svg" alt="">
+        </li>
+        <li>
+            <a href="#">Web Search</a>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <img src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-finance-v2.svg" alt="">
+        </li>
+        <li>
+            <a href="#">Finance</a>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <img src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-legal-v2.svg" alt="">
+        </li>
+        <li>
+            <a href="#">Legal</a>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <img src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-linux-v2.svg" alt="">
+        </li>
+        <li>
+            <a href="#">Linux</a>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <img src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-manufacturing-v2.svg" alt="">
+        </li>
+        <li>
+            <a href="#">Manufacturing</a>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <img src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-aws-v2.svg" alt="">
+        </li>
+        <li>
+            <a href="#">Amazon Web Services</a>
+        </li>
+    </ul>
+</div>
+<div class="link">
+    <ul>
+        <li>
+            <img src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-aws-v2.svg" alt="">
+        </li>
+        <li>
+            <a href="#">Content Writing</a>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <img src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-aws-v2.svg" alt="">
+        </li>
+        <li>
+            <a href="#">Marketing</a>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <img src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-aws-v2.svg" alt="">
+        </li>
+        <li>
+            <a href="#">Excel</a>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <img src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-aws-v2.svg" alt="">
+        </li>
+        <li>
+            <a href="#">Ghostwriting</a>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <img src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-aws-v2.svg" alt="">
+        </li>
+        <li>
+            <a href="#">Copywriting</a>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <img src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-aws-v2.svg" alt="">
+        </li>
+        <li>
+            <a href="#">Accounting</a>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <img src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-aws-v2.svg" alt="">
+        </li>
+        <li>
+            <a href="#">MySQL</a>
+        </li>
+    </ul>
+</div>
+<div class="link">
+    <ul>
+        <li>
+            <img src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-aws-v2.svg" alt="">
+        </li>
+        <li>
+            <a href="#">Banner Design</a>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <img src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-aws-v2.svg" alt="">
+        </li>
+        <li>
+            <a href="#">Illustration</a>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <img src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-aws-v2.svg" alt="">
+        </li>
+        <li>
+            <a href="#">Software Development</a>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <img src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-aws-v2.svg" alt="">
+        </li>
+        <li>
+            <a href="#">PHP</a>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <img src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-aws-v2.svg" alt="">
+        </li>
+        <li>
+            <a href="#">3D Modelling</a>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <img src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-aws-v2.svg" alt="">
+        </li>
+        <li>
+            <a href="#">Photoshop</a>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <img src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-aws-v2.svg" alt="">
+        </li>
+        <li>
+            <a href="#">Technical Writing</a>
+        </li>
+    </ul>
+</div>
+<div class="link">
+    <ul>
+        <li>
+            <img src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-aws-v2.svg" alt="">
+        </li>
+        <li>
+            <a href="#">Blogging</a>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <img src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-aws-v2.svg" alt="">
+        </li>
+        <li>
+            <a href="#">Internet Marketing</a>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <img src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-aws-v2.svg" alt="">
+        </li>
+        <li>
+            <a href="#">eCommerce</a>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <img src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-aws-v2.svg" alt="">
+        </li>
+        <li>
+            <a href="#">Data Entry</a>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <img src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-aws-v2.svg" alt="">
+        </li>
+        <li>
+            <a href="#">Link Building</a>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <img src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-aws-v2.svg" alt="">
+        </li>
+        <li>
+            <a href="#">C++ Prpgramming</a>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <img src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-aws-v2.svg" alt="">
+        </li>
+        <li>
+            <a href="#">See All</a>
+        </li>
+    </ul>
+</div>
+</div>
+
+<!-- FOOTER -->
+ <footer>
+    <div class="img">
+        <img _ngcontent-webapp-c112=""  class="ImageElement" src="https://www.f-cdn.com/assets/main/en/assets/home/api-enterprise/api-upsell-v3.jpg">
+        <h3>
+            Freelancer API.
+        </h3> 
+        <h2>
+            50 million professionals <br> on demand
+        </h2>           
+        <p> Why hire people when you can simply integrate our <br> talented cloud workforce instead?<br>
+        <button>Viev Documentation</button></p>
+        <img _ngcontent-webapp-c112="" class="ImageElement" src="https://www.f-cdn.com/assets/main/en/assets/home/api-enterprise/enterprise-upsell-v3.jpg">
+        <h5>
+            Freelancer Enterprise.
+        </h5>
+        <h1>
+            Company budget? Get <br> more done for less
+        </h1>
+        <span>
+            Use our workforce of 50 million to help your business <br> achieve more.<br>
+            <button>Contact</button>
+        </span>
+    </div>
+    
+<div class="dil">
+    
+    <ul>
+        <img src="https://www.f-cdn.com/assets/main/en/assets/freelancer-logo-light.svg" style="width: 120px;"> 
+        <li>
+            <i class="fa fa-globe" aria-hidden="true"></i> <a href="#">US (International) / English</a>
+        </li>
+        <li>
+            <i class="fa fa-question-circle" aria-hidden="true"></i><a href="#">Help & Support</a>
+        </li>
+    </ul>   
+    <ul class="b">
+        <h4>Freelancer</h4>
+        <li><a href="#">Categories</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contests</a></li>
+        <li><a href="#">Freelancers</a></li>
+        <li><a href="#">Enterprise</a></li>
+        <li><a href="#">Preferred Freelancer</a></li>
+        <li><a href="#">Program</a></li>
+        <li><a href="#">Project Management</a></li>
+        <li><a href="#">Local Jobs</a></li>
+        <li><a href="#">Photo Anywhere</a></li>
+        <li><a href="#">Showcase</a></li>
+        <li><a href="#">API for Developers</a></li>
+        <li><a href="#">Get Verified</a></li>
+    </ul>
+    <ul class="b">
+        <h4>About</h4>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">How it Works</a></li>
+        <li><a href="#">Security</a></li>
+        <li><a href="#">Investor</a></li>
+        <li><a href="#">Sitemap</a></li>
+        <li><a href="#">Quotes</a></li>
+        <li><a href="#">News</a></li>
+    </ul>
+    <ul class="b">
+        <h4>Terms</h4>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms and Conditions</a></li>
+        <li><a href="#">Copyright Policy</a></li>
+        <li><a href="#">Code of Conduct</a></li>
+        <li><a href="#">Fees and Charges</a></li>
+    </ul>  
+    <ul>
+        <h4>Apps</h4>
+            <a _ngcontent-webapp-c118="" class="LinkElement ng-star-inserted" href="https://bnc.lt/Ed5l/VcovUszaWr" target="_blank" rel=" noopener" data-underline="hover"><div _ngcontent-webapp-c118="" class="LinkInner ng-star-inserted" data-icon="false" data-icon-position="left"><!----><div _ngcontent-webapp-c118="" class="LinkText"><fl-picture _ngcontent-webapp-c134="" alt="Apple App Store logo" _nghost-webapp-c112="" data-aspect-ratio="false" data-display="block"><picture _ngcontent-webapp-c112="" class="PictureElement IsShown" data-display="block" data-aspect-ratio="false"><!----><!----><!----><source _ngcontent-webapp-c112="" srcset="https://www.f-cdn.com/assets/main/en/assets/footer/app-store.svg" class="ng-star-inserted"><!----><img _ngcontent-webapp-c112="" class="ImageElement" src="https://www.f-cdn.com/assets/main/en/assets/footer/app-store.svg" alt="Apple App Store logo" data-display="block" data-aspect-ratio="false" loading="lazy"></picture></fl-picture></div></div><!----></a>
+        
+            <fl-link _ngcontent-webapp-c134="" class="FooterMobileLink" _nghost-webapp-c118="" data-color="default" data-hover-color="default" data-weight="inherit" data-size="xsmall" data-margin-bottom="mid"><!----><a _ngcontent-webapp-c118="" class="LinkElement ng-star-inserted" href="https://bnc.lt/Ed5l/VcovUszaWr" target="_blank" rel=" noopener" data-underline="hover"><div _ngcontent-webapp-c118="" class="LinkInner ng-star-inserted" data-icon="false" data-icon-position="left"><!----><div _ngcontent-webapp-c118="" class="LinkText"><fl-picture _ngcontent-webapp-c134="" alt="Google Play logo" _nghost-webapp-c112="" data-aspect-ratio="false" data-display="block"><picture _ngcontent-webapp-c112="" class="PictureElement IsShown" data-display="block" data-aspect-ratio="false"><!----><!----><!----><source _ngcontent-webapp-c112="" srcset="https://www.f-cdn.com/assets/main/en/assets/footer/google-play.svg" class="ng-star-inserted"><!----><img _ngcontent-webapp-c112="" class="ImageElement" src="https://www.f-cdn.com/assets/main/en/assets/footer/google-play.svg" alt="Google Play logo" data-display="block" data-aspect-ratio="false" loading="lazy"></picture></fl-picture></div></div><!----></a><!----><!----><!----><!----><!----></fl-link>
+            <ul class="c">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li> 
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li> 
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            </ul>
+     
+    </ul>
+ 
+</div>
+   
+     <hr class="footerHr">
+<div class="gizlilik">
+    <ul class="a">
+        <li>
+            53,859,362
+        </li>
+        <li>
+            Registered Users
+        </li>     
+    </ul>
+    <ul class="a">
+        <li>
+            20,265,422
+        </li>
+        <li>
+            Total Jobs Posted
+        </li>
+    </ul>
+    <ul>  
+        <li>
+            Freelancer ® is a registered Trademark of Freelancer Technology Pty Limited (ACN 142 189 759)
+        </li>
+        <li>
+            Copyright © 2021 Freelancer Technology Pty Limited (ACN 142 189 759)
+        </li>
+    </ul>
+</div>
+
+    </footer>
+</body>
+</html>
